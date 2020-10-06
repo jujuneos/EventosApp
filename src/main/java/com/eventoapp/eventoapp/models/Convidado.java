@@ -12,7 +12,7 @@ public class Convidado implements Serializable {
     
     @Id
     @NotEmpty
-    private long rg;
+    private String rg;
     
     @NotEmpty
     private String nomeConvidado;
@@ -20,11 +20,11 @@ public class Convidado implements Serializable {
     @ManyToOne
     private Evento evento;
     
-    public long getRg() {
+    public String getRg() {
         return rg;
     }
 
-    public void setRg(long rg) {
+    public void setRg(String rg) {
         this.rg = rg;
     }
 
